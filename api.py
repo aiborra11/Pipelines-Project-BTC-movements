@@ -11,7 +11,6 @@ def TimeConverter (dev):
     date_split = time_conversion.split()
     date=[date_split[0]]
     time=[date_split[1]]
-    
     return date, time
 
 def GetBtc(df):
