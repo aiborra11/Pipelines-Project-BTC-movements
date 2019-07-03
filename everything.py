@@ -4,10 +4,12 @@ from analysis import *
 from api import *
 
 def read_file(df):
+    print('Reading file...')
     data_csv = read_data(df)
     return data_csv
 
 def cleaning(df):
+    print('Cleaning data...')
     read_file = replace (df, "Open")
     read_file = replace (df, "Low")
     read_file = replace (df, "High")
@@ -27,6 +29,7 @@ def cleaning(df):
     return read_file
 
 def analysis(df):
+    print('Analyzing data...')
     value = resta(df, 'Open', 'Close', 'Diff')
     value = position(df, 'Diff', 'Position')
     value = absolute(df, 'Diff', 'Open', 'Close')
