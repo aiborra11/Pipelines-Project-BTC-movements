@@ -1,6 +1,6 @@
-#Pipelines project
+Pipelines project
 
-**Learning how to build and use pipelines projects**
+Learning how to build and use pipelines projects
 
 1. Import CSV file showing the price of the BTC in 5 mins timeframe.
 2. Import new data through an API (Bitstamp in my case).
