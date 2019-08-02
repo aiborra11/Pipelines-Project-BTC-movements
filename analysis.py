@@ -4,11 +4,6 @@ def resta(df, Open, Close, Diff):
     df['Diff'] = df[Open] - df[Close]
     return df
 
-"""
-*idea: El mercado es mas manipulable cuando el BTC vale menos vs. es menos manipulable porque el inversor tiene mas BTC acumulados por tema wykoff. 
-Medir mechas tras movimientos fuertes. Detectar long/short close - high/low.
-"""
-
 def position(df, Diff, Position):
     
     lst=[]  
